@@ -1,0 +1,55 @@
+<view class="detail_swiper">
+    <swiper autoplay="{{true}}" circular="{{true}}" indicator-dots="{{true}}" indicator-active-color="#ff0000" interval="3500">
+        <swiper-item
+        wx:for="{{goodsObj.pics}}"
+        wx:key="pics_id"
+        bindtap="handlePreviewImage"
+        data-url="{{item.pics_mid}}"
+        >
+            <image mode="widthFix" src="{{item.pics_mid}}"></image>
+        </swiper-item>
+    </swiper>
+</view>
+<view class="goods_price">
+    <view class="price">￥{{goodsObj.goods_price}}</view>
+</view>
+<view class="goods_name_row">
+    <view class="goods_name">{{goodsObj.goods_name}}</view>
+    <view class="goods_collect">
+        <text class="iconfont icon-shoucang_out"></text>
+        <view class="collect_text">CollecT</view>
+    </view>
+</view>
+<view class="goods_info">
+    <view class="goods_info_title">PicS AnD Infomation</view>
+    <view class="goods_info_content">
+        <rich-text nodes="{{goodsObj.goods_introduce}}"></rich-text>
+    </view>
+</view>
+<view class="btm_toolbar">
+    <view class="top">
+        <view class="toolbar_item">
+            <view class="iconfont icon-kefu"></view>
+            <view>ServicE</view>
+            <button open-type="contact"></button>
+        </view>
+        <view class="toolbar_item">
+            <view class="iconfont icon-fenxiang_2"></view>
+            <view>SharE</view>
+            <button open-type="share"></button>
+        </view>
+        <navigator url="/pages/cart/index" class="toolbar_item" open-type="switchTab">
+            <view class="iconfont icon-gouwuchekong"></view>
+            <view>CarT</view>
+        </navigator>
+        <view class="toolbar_item btn_cart"
+        bindtap="handleAddToCart"
+        >
+            <view class="btn_view_add">AdD TO CarT</view>
+        </view>
+        <view class="toolbar_item btn_buy">
+            <view class="btn_view_buy">BuY</view>
+        </view>
+    </view>
+    <view class="bottom_blank"></view>
+</view>

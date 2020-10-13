@@ -1,0 +1,59 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/category/index",
+    "pages/goods_lis/index",
+    "pages/goods_detail/index",
+    "pages/cart/index",
+    "pages/collect/index",
+    "pages/order/index",
+    "pages/search/index",
+    "pages/user/index",
+    "pages/feedback/index",
+    "pages/login/index",
+    "pages/auth/index",
+    "pages/pay/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Ein'S MarkeT",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#ff0000",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "HomE",
+        "iconPath": "icons/ICON_HOME.png",
+        "selectedIconPath": "icons/ICON_HOME.png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "CategorY",
+        "iconPath": "icons/ICON_CATEGORY.png",
+        "selectedIconPath": "icons/ICON_CATEGORY.png"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": "CarT",
+        "iconPath": "icons/ICON_CART.png",
+        "selectedIconPath": "icons/ICON_CART.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "UseR",
+        "iconPath": "icons/ICON_USER.png",
+        "selectedIconPath": "icons/ICON_USER.png"
+      }
+    ]
+  },
+  
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
