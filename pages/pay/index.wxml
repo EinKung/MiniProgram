@@ -36,7 +36,7 @@
             TotaL: <text class="total_price_text">￥{{totalPay}}</text>
         </view>
     </view>
-    <view class="order_pay_wrap" bindtap="">
+    <view class="order_pay_wrap" bindtap="handlePay">
         PaY
     </view>
 </view>

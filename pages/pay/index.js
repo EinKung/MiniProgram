@@ -1,4 +1,4 @@
-import { chooseAddress, getSetting, openSetting, showModal, showToast } from "../../utils/asyncwx.js";
+import { } from "../../utils/asyncwx.js";
 import regeneratorRuntime from "../../lib/runtime/runtime.js"
 Page({
   data:{
@@ -20,5 +20,19 @@ Page({
       cart,
       address
     })
+  },
+  handlePay(){
+    const token = wx.getStorageSync("token");
+    if(!token){
+      wx.navigateTo({
+        url: '/pages/auth/index',
+        success: (result)=>{
+          
+        },
+        fail: ()=>{},
+        complete: ()=>{}
+      });
+    }
+    console.log("123");
   }
 });

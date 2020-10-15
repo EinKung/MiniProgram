@@ -1,1 +1,15 @@
-/* pages/auth/index.wxss */
+Page {
+  padding-top: 200rpx;
+}
+.button {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+}
+.button button {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ff0000;
+}
