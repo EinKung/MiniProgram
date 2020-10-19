@@ -23,9 +23,16 @@ Page({
     })
   },
   async handlePay(){
+    let cart = wx.getStorageSync("cart");
+    const checkedCart = wx.getStorageSync("checkedCart");
+    for(var i=0;i < checkedCart.length;i++){
+      cart = cart.filter(v=>v.goods_id!==checkedCart[i].goods_id);
+    }
     wx.navigateTo({
       url: '/pages/order/index'
     });
+    wx.setStorageSync("checkedCart", []);
+    wx.setStorageSync("cart", cart);
     // try{
     //   const token = wx.getStorageSync("token");
     //   if(!token){

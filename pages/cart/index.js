@@ -17,7 +17,7 @@ Page({
     this.setData({
       address
     })
-    if(checkedCart.length!==0){
+    if(checkedCart.length!==0&cart.length!==0){
       for(var i=0;i < checkedCart.length;i++){
         const checkedId = cart.findIndex(v=>v.goods_id===checkedCart[i].goods_id);
         cart[checkedId].checked = true;

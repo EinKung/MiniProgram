@@ -1,2 +1,13 @@
-<!--pages/user/index.wxml-->
-<text>pages/user/index.wxml</text>
+<view class="user_info_wrap">
+    <button open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo"
+    wx:if="{{!userInfo.avatarUrl}}"
+    >LogiN</button>
+    <view class="user_img_wrap"
+    wx:else>
+        <image class="user_bg" src="{{userInfo.avatarUrl}}"></image>
+        <view class="user_info">
+            <image class="user_icon" src="{{userInfo.avatarUrl}}"></image>
+            <view class="user_name">{{userInfo.nickName}}</view>
+        </view>
+    </view>
+</view>
