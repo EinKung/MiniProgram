@@ -1,4 +1,5 @@
-// pages/user/index.js
+import { chooseAddress, getSetting, openSetting } from "../../utils/asyncwx.js";
+import regeneratorRuntime from "../../lib/runtime/runtime.js"
 Page({
   data:{
     userInfo: {}
@@ -16,5 +17,19 @@ Page({
     this.setData({
       userInfo
     })
+  },
+  async handleAddressSet(){
+    try{
+      const res = await getSetting();
+      const scopeAddr = res.authSetting["scope.address"];
+      if(scopeAddr===false){
+        await openSetting();
+      }
+      let address = await chooseAddress();
+      address.all = address.provinceName+address.cityName+address.countyName+address.detailInfo;
+      wx.setStorageSync("address", address);
+    }catch(error){
+      console.log(error);
+    }
   }
 })

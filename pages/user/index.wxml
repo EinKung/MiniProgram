@@ -11,3 +11,57 @@
         </view>
     </view>
 </view>
+<view class="user_content">
+    <view class="user_main">
+        <view class="history_wrap">
+            <navigator>
+                <view class="his_num">0</view>
+                <view class="his_name">StorE</view>
+            </navigator>
+            <navigator>
+                <view class="his_num">0</view>
+                <view class="his_name">GoodS</view>
+            </navigator>
+            <navigator>
+                <view class="his_num">0</view>
+                <view class="his_name">FolloW</view>
+            </navigator>
+            <navigator>
+                <view class="his_num">0</view>
+                <view class="his_name">HistorY</view>
+            </navigator>
+        </view>
+        <view class="orders_wrap">
+            <view class="order_title">OrdeR</view>
+            <view class="order_content">
+                <navigator>
+                    <view class="iconfont icon-dingdan"></view>
+                    <view class="order_name">AlL</view>
+                </navigator>
+                <navigator>
+                    <view class="iconfont icon-tongzhi"></view>
+                    <view class="order_name">PayinG</view>
+                </navigator>
+                <navigator>
+                    <view class="iconfont icon-icon-receive"></view>
+                    <view class="order_name">RecivinG</view>
+                </navigator>
+                <navigator>
+                    <view class="iconfont icon-tuikuan"></view>
+                    <view class="order_name">RefunD</view>
+                </navigator>
+            </view>
+        </view>
+        <view class="address_wrap" bindtap="handleAddressSet">ManagE AddresS InfO</view>
+        <view class="app_info_wrap">
+            <view class="app_info_item_contact">
+                <text>ServicE</text>
+                <text>400-618-4000</text>
+            </view>
+            <view class="app_info_item">FeedbacK</view>
+            <view class="app_info_item">AbouT</view>
+        </view>
+        <view class="recommend_wrap">RecomenD TO OtheR</view>
+    </view>
+</view>
+<view class="blank"></view>

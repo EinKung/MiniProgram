@@ -42,3 +42,89 @@
         }
     }
 }
+
+.user_content{
+    position: relative;
+    .user_main{
+        position: absolute;
+        width: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -40rpx;
+        .history_wrap{
+            background-color: #ff0000;
+            display: flex;
+            border-radius: 10rpx;
+            padding: 20rpx;
+            navigator{
+                flex: 1;
+                text-align: center;
+                .his_num{
+                    color: #ffffff;
+                }
+                .his_name{
+                    color: #ffffff;
+                }
+            }
+        }
+        .orders_wrap{
+            border-radius: 10rpx;
+            background-color: #ff0000;
+            margin-top: 20rpx;
+            .order_title{
+                padding: 20rpx;
+                border-bottom: 1rpx solid #ffffff;
+                color: #ffffff;
+                text-align: center;
+            }
+            .order_content{
+                display: flex;
+                padding: 20rpx;
+                navigator{
+                    flex: 1;
+                    text-align: center;
+                    .iconfont{
+                        color: #ffffff;
+                    }
+                    .order_name{
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        .address_wrap{
+            margin-top: 30rpx;
+            background-color: #ff0000;
+            padding: 20rpx;
+            color: #ffffff;
+            border-radius: 10rpx;
+        }
+        .app_info_wrap{
+            margin-top: 30rpx;
+            background-color: #ff0000;
+            border-radius: 10rpx;
+            .app_info_item_contact{
+                padding: 20rpx;
+                color: #ffffff;
+                display: flex;
+                justify-content: space-between;
+            }
+            .app_info_item{
+                border-top: #ffffff 1rpx solid;
+                padding: 20rpx;
+                color: #ffffff;
+            }
+        }
+        .recommend_wrap{
+            margin-top: 30rpx;
+            background-color: #ff0000;
+            padding: 20rpx;
+            color: #ffffff;
+            border-radius: 10rpx;
+        }
+    }
+}
+
+.blank{
+    padding-top: 820rpx;
+}

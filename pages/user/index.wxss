@@ -42,3 +42,87 @@
   background-color: #ff0000;
   border-radius: 10rpx;
 }
+.user_content {
+  position: relative;
+}
+.user_content .user_main {
+  position: absolute;
+  width: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40rpx;
+}
+.user_content .user_main .history_wrap {
+  background-color: #ff0000;
+  display: flex;
+  border-radius: 10rpx;
+  padding: 20rpx;
+}
+.user_content .user_main .history_wrap navigator {
+  flex: 1;
+  text-align: center;
+}
+.user_content .user_main .history_wrap navigator .his_num {
+  color: #ffffff;
+}
+.user_content .user_main .history_wrap navigator .his_name {
+  color: #ffffff;
+}
+.user_content .user_main .orders_wrap {
+  border-radius: 10rpx;
+  background-color: #ff0000;
+  margin-top: 20rpx;
+}
+.user_content .user_main .orders_wrap .order_title {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ffffff;
+  color: #ffffff;
+  text-align: center;
+}
+.user_content .user_main .orders_wrap .order_content {
+  display: flex;
+  padding: 20rpx;
+}
+.user_content .user_main .orders_wrap .order_content navigator {
+  flex: 1;
+  text-align: center;
+}
+.user_content .user_main .orders_wrap .order_content navigator .iconfont {
+  color: #ffffff;
+}
+.user_content .user_main .orders_wrap .order_content navigator .order_name {
+  color: #ffffff;
+}
+.user_content .user_main .address_wrap {
+  margin-top: 30rpx;
+  background-color: #ff0000;
+  padding: 20rpx;
+  color: #ffffff;
+  border-radius: 10rpx;
+}
+.user_content .user_main .app_info_wrap {
+  margin-top: 30rpx;
+  background-color: #ff0000;
+  border-radius: 10rpx;
+}
+.user_content .user_main .app_info_wrap .app_info_item_contact {
+  padding: 20rpx;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+.user_content .user_main .app_info_wrap .app_info_item {
+  border-top: #ffffff 1rpx solid;
+  padding: 20rpx;
+  color: #ffffff;
+}
+.user_content .user_main .recommend_wrap {
+  margin-top: 30rpx;
+  background-color: #ff0000;
+  padding: 20rpx;
+  color: #ffffff;
+  border-radius: 10rpx;
+}
+.blank {
+  padding-top: 820rpx;
+}
