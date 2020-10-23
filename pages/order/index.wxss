@@ -1,1 +1,27 @@
-/* pages/order/index.wxss */
+.order_main {
+  padding: 20rpx;
+}
+.order_main .order_item {
+  padding: 20rpx;
+  border: 1rpx solid #cccccc;
+  border-radius: 10rpx;
+  display: flex;
+}
+.order_main .order_item image {
+  flex: 2;
+}
+.order_main .order_item .order_info_wrap {
+  flex: 5;
+}
+.order_main .order_item .order_info_wrap .order_no_row {
+  display: flex;
+  justify-content: space-between;
+}
+.order_main .order_item .order_info_wrap .order_price_row {
+  display: flex;
+  justify-content: space-between;
+}
+.order_main .order_item .order_info_wrap .order_time_row {
+  display: flex;
+  justify-content: space-between;
+}

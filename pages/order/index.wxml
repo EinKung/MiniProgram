@@ -1,2 +1,22 @@
-<!--pages/order/index.wxml-->
-<text>pages/order/index.wxml</text>
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+    <view class="order_main">
+        <view class="order_item"
+        >
+            <image src="/icons/ICON_CATEGORY.png" mode="widthFix"></image>
+            <view class="order_info_wrap">
+                <view class="order_no_row">
+                    <view class="order_no_text">NO</view>
+                    <view class="order_no_value">1</view>
+                </view>
+                <view class="order_price_row">
+                    <view class="order_price_text">PricE</view>
+                    <view class="order_price_value">￥999</view>
+                </view>
+                <view class="order_time_row">
+                    <view class="order_time_text">TimE</view>
+                    <view class="order_time_value">2020-05-19</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</Tabs>

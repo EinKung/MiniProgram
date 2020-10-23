@@ -34,19 +34,19 @@
         <view class="orders_wrap">
             <view class="order_title">OrdeR</view>
             <view class="order_content">
-                <navigator>
+                <navigator url="/pages/order/index?type=1">
                     <view class="iconfont icon-dingdan"></view>
                     <view class="order_name">AlL</view>
                 </navigator>
-                <navigator>
+                <navigator url="/pages/order/index?type=2">
                     <view class="iconfont icon-tongzhi"></view>
                     <view class="order_name">PayinG</view>
                 </navigator>
-                <navigator>
+                <navigator url="/pages/order/index?type=3">
                     <view class="iconfont icon-icon-receive"></view>
                     <view class="order_name">RecivinG</view>
                 </navigator>
-                <navigator>
+                <navigator url="/pages/order/index?type=4">
                     <view class="iconfont icon-tuikuan"></view>
                     <view class="order_name">RefunD</view>
                 </navigator>
