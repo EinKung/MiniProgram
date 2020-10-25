@@ -43,6 +43,9 @@ Page {
   align-items: center;
   border-left: #000000 solid 2rpx;
 }
+.goods_name_row .goods_collect .icon-shoucang_in {
+  color: #ff0000;
+}
 .goods_info .goods_info_title {
   width: 100%;
   font-size: 32rpx;

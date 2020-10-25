@@ -15,8 +15,8 @@
 </view>
 <view class="goods_name_row">
     <view class="goods_name">{{goodsObj.goods_name}}</view>
-    <view class="goods_collect">
-        <text class="iconfont icon-shoucang_out"></text>
+    <view class="goods_collect" bindtap="handleCollect">
+        <text class="iconfont {{collected?'icon-shoucang_in':'icon-shoucang_out'}}"></text>
         <view class="collect_text">CollecT</view>
     </view>
 </view>

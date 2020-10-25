@@ -18,8 +18,8 @@
                 <view class="his_num">0</view>
                 <view class="his_name">StorE</view>
             </navigator>
-            <navigator>
-                <view class="his_num">0</view>
+            <navigator url="/pages/collect/index">
+                <view class="his_num">{{collectNum}}</view>
                 <view class="his_name">GoodS</view>
             </navigator>
             <navigator>
