@@ -29,7 +29,7 @@
 }
 .feedback .fb_content_wrap .fb_content .fb_tool {
   display: flex;
-  dflex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .feedback .fb_content_wrap .fb_content .fb_tool button {
   width: 90rpx;
