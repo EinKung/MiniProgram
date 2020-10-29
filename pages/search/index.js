@@ -4,6 +4,7 @@ Page({
   data: {
     goods: []
   },
+  TimeId:-1,
   handleInput(e){
     const {value} = e.detail;
     if(!value.trim()){
@@ -12,7 +13,10 @@ Page({
       })
       return;
     }else{
-      this.qseacrh(value);
+      clearTimeout(this.TimeId);
+      this.TimeId=setTimeout(()=>{
+        this.qseacrh(value);
+      }, 1000);
     }
   },
   async qseacrh(query){

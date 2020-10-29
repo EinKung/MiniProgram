@@ -1,1 +1,56 @@
-/* pages/feedback/index.wxss */
+.feedback .picker_title {
+  padding: 20rpx;
+  font-size: 32rpx;
+}
+.feedback .picker_wrap {
+  padding: 10rpx;
+}
+.feedback .picker_wrap picker {
+  background-color: #ff0000;
+  border-radius: 10rpx;
+}
+.feedback .picker_wrap picker .picker_value {
+  padding: 20rpx;
+  font-size: 32rpx;
+  color: #ffffff;
+}
+.feedback .fb_content_wrap {
+  padding: 10rpx;
+}
+.feedback .fb_content_wrap .fb_content {
+  border: 1rpx solid #cccccc;
+  border-radius: 10rpx;
+  padding: 10rpx;
+}
+.feedback .fb_content_wrap .fb_content textarea {
+  padding: 10rpx;
+  width: 100%;
+  height: 500rpx;
+}
+.feedback .fb_content_wrap .fb_content .fb_tool {
+  display: flex;
+  dflex-wrap: wrap;
+}
+.feedback .fb_content_wrap .fb_content .fb_tool button {
+  width: 90rpx;
+  height: 90rpx;
+  font-size: 40rpx;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff0000;
+  color: #ffffff;
+}
+.feedback .form_btn_wrap {
+  align-items: center;
+}
+.feedback .form_btn_wrap .btn {
+  font-size: 32rpx;
+  width: 25%;
+  padding: 30rpx;
+  border-radius: 10rpx;
+  background-color: #ff0000;
+  flex: 2;
+  color: #ffffff;
+}

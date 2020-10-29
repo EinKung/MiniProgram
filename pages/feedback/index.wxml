@@ -1,2 +1,23 @@
-<!--pages/feedback/index.wxml-->
-<text>pages/feedback/index.wxml</text>
+<view class="feedback">
+  <view class="picker_title">ProbleM TypE</view>
+  <view class="picker_wrap">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker_value">
+        {{array[index]}}
+        </view>
+    </picker>
+  </view>
+  <view class="fb_content_wrap">
+    <view class="fb_content">
+        <textarea></textarea>
+        <view class="fb_tool">
+            <button>+</button>
+        </view>
+    </view>
+  </view>
+  <view class="form_btn_wrap">
+      <view class="btn">
+        CommiT
+      </view>
+  </view>
+</view>

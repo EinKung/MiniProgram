@@ -58,7 +58,7 @@
                 <text>ServicE</text>
                 <text>400-618-4000</text>
             </view>
-            <view class="app_info_item">FeedbacK</view>
+            <navigator class="app_info_item" url="/pages/feedback/index">FeedbacK</navigator>
             <view class="app_info_item">AbouT</view>
         </view>
         <view class="recommend_wrap">RecomenD TO OtheR</view>
