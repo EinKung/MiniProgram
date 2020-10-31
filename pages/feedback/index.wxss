@@ -31,7 +31,8 @@
   display: flex;
   flex-wrap: wrap;
 }
-.feedback .fb_content_wrap .fb_content .fb_tool button {
+.feedback .fb_content_wrap .fb_content .fb_tool .pic_add_btn {
+  border-radius: 10rpx;
   width: 90rpx;
   height: 90rpx;
   font-size: 40rpx;
@@ -42,15 +43,18 @@
   background-color: #ff0000;
   color: #ffffff;
 }
+.feedback .fb_content_wrap .fb_content .fb_tool .upped_img {
+  margin-left: 20rpx;
+}
 .feedback .form_btn_wrap {
-  align-items: center;
+  padding: 10rpx;
 }
 .feedback .form_btn_wrap .btn {
   font-size: 32rpx;
-  width: 25%;
   padding: 30rpx;
   border-radius: 10rpx;
   background-color: #ff0000;
   flex: 2;
   color: #ffffff;
+  text-align: center;
 }
