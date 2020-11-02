@@ -29,8 +29,9 @@ Page({
     });
   },
   handleRemovePic(e){
-    const {index} = e.currentTarget.dataset;
+    const {value} = e.detail;
     let {chosenPics} = this.data;
+    const index = chosenPics.findIndex(v=>v===value);
     chosenPics.splice(index, 1);
     this.setData({
       chosenPics

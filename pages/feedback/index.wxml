@@ -15,10 +15,9 @@
           <view class="upped_img"
           wx:for="{{chosenPics}}"
           wx:key="*this"
-          bindtap="handleRemovePic"
           data-index="{{index}}"
           >
-            <UpImg src="{{item}}"></UpImg>
+            <UpImg src="{{item}}" binditemRemove="handleRemovePic"></UpImg>
           </view>
         </view>
     </view>

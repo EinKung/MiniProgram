@@ -1,4 +1,6 @@
 <view class="up_img_wrap">
     <image src="{{src}}"></image>
-    <icon type="clear" size="23" color="red"></icon>
+    <view class="rm_btn" bindtap="handleItemRemove">
+        X
+    </view>
 </view>

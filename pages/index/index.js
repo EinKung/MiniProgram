@@ -25,24 +25,31 @@ Page({
   getSwiperData(){
     request({url:"/home/swiperdata"})
     .then(result=>{
+      let swiper = result.data.message;
+      swiper.forEach(v => v.navigator_url = v.navigator_url.replace("main", "index"));
         this.setData({
-          swiperList:result.data.message
+          swiperList:swiper
         })
     })
   },
   getCatesData(){
     request({url:"/home/catitems"})
     .then(result=>{
+      const cates = result.data.message;
         this.setData({
-          catesList:result.data.message
+          catesList:cates
         })
     })
   },
   getFloorData(){
     request({url:"/home/floordata"})
     .then(result=>{
+      let floor = result.data.message;
+      for(var i=0;i<floor.length;i++){
+        floor[i].product_list.forEach(v=>v.navigator_url=v.navigator_url.replace("goods_list", "goods_lis/index"));
+      }
         this.setData({
-          floorList:result.data.message
+          floorList:floor
         })
     })
   }

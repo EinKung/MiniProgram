@@ -18,9 +18,12 @@ Component({
   },
 
   /**
-   * 组件的方法列表
+   * 组件的方法列表e
    */
   methods: {
-
+    handleItemRemove(){
+      const value = this.data.src;
+      this.triggerEvent("itemRemove", {value})
+    }
   }
 })

@@ -8,8 +8,10 @@
   height: 100%;
   border-radius: 10rxp;
 }
-.up_img_wrap icon {
+.up_img_wrap .rm_btn {
   position: absolute;
-  top: -22rpx;
+  top: -15rpx;
   right: -22rpx;
+  color: #FFFFFF;
+  background-color: #ff0000;
 }
